@@ -18,15 +18,18 @@ export class LoginComponent implements OnInit {
     this.initForm() ; 
   }
 
+
   initForm(){
             this.formGroup = new FormGroup({
                 email:new FormControl('',[Validators.required]),
                 password:new FormControl('',[Validators.required])
             }) ; 
   }
+  
   changeTheme(){
     this.isTrue = !this.isTrue
   }
+
   loginProcess()
   {
       if(this.formGroup.valid)

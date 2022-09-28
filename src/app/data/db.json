@@ -1,0 +1,16 @@
+{
+  "customers": [
+    {
+      "customerName": "fsfs",
+      "email": "anksoni0205@gmail.com",
+      "password": "dddd",
+      "id": 1
+    },
+    {
+      "customerName": "Ank",
+      "email": "anksoni0205@gmail.com",
+      "password": "12345",
+      "id": 2
+    }
+  ]
+}

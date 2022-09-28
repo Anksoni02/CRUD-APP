@@ -15,7 +15,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { NgxPaginationModule } from 'ngx-pagination'; 
+import { NgxPaginationModule } from 'ngx-pagination';
+import { NameEditorComponent } from './name-editor/name-editor.component';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { HeroFormTemplateComponent } from './hero-form-template/hero-form-template.component';
+import { ProductComponent } from './product/product.component'; 
+import { ProfileService } from './profile.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    NameEditorComponent,
+    ProfileEditorComponent,
+    HeroFormTemplateComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +49,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ReactiveFormsModule,
     NgxPaginationModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
